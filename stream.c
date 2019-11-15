@@ -8,9 +8,11 @@
  * @date 14/11/2019.
  */
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "stream.h"
+
 
 /**
  * @struct stream_s
@@ -22,6 +24,7 @@ struct stream_s
     /** @var name The name of the stream, which may be NULL. */
     char* name;
 };
+
 
 /**
  * @struct STREAM_H
@@ -50,14 +53,61 @@ struct STREAM_H
  * @func new_stream
  * 
  * Allocates and initialises a new stream.
+ * 
+ * @param name  The name of the stream, which can be null.
+ * @return An initialised stream, ready for use.
  */
-stream new_stream(void)
+stream new_stream(char* const name)
 {
     stream s = malloc(sizeof(struct stream_s));
     if (!s)
     {
         exit(EXIT_FAILURE);
     }
-    s->name = NULL;
+    s->name = name;
     return s;
+}
+
+
+/**
+ * @func free_stream
+ * 
+ * Deallocates and frees a stream.
+ * 
+ * @see stream.h 
+ *
+ * @param s     Stream to be free'd.
+ * @return      A null stream pointer.
+ */
+stream free_stream(const stream s)
+{
+    free(s->name);
+    free(s);
+    return NULL;
+}
+
+/**
+ * @func get_stream_name
+ * 
+ * Returns a read only pointer to the name  of the stream.
+ * 
+ * @param s     Stream to find the name off.
+ * @return      A read only pointer to the name of stream s.
+ */
+const char* get_stream_name(const stream s)
+{
+    return (const char*) s->name;
+}
+
+/**
+ * @func set_stream_name
+ * 
+ * Assigns a name to a specified stream.
+ * 
+ * @param s     The stream to (re)name.
+ */
+void set_stream_name(stream s)
+{
+    s = NULL;
+    s += 1;
 }
