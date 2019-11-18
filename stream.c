@@ -1,7 +1,7 @@
 /**
  * @file stream.c
  * 
- * 'stream.c' implements access to a generic stream structure.
+ * `stream.c` implements access to a generic stream structure.
  * 
  * @author H Paterson.
  * @copyright Boost Software License 1.0.
@@ -15,7 +15,7 @@
 /**
  * @struct stream_s
  * 
- * stream_s stores common data shared by all Crop streams.
+ * `stream_s` stores common data shared by all Crop streams.
  */
 struct stream_s 
 {
@@ -26,10 +26,10 @@ struct stream_s
 /**
  * @struct STREAM_H
  * 
- * STREAM_H implements a dummy type guaranteed to be the 
+ * `STREAM_H` implements a dummy type guaranteed to be the 
  * same size as stream_s.
  * 
- * STREAM_H is used, via a typedef in stream.h, to ensure
+ * `STREAM_H` is used, via a typedef in stream.h, to ensure
  * types with "extend" stream contain the correct fields.
  * 
  * @see stream.h

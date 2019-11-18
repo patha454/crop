@@ -8,7 +8,12 @@
 * @date 14/11/19.
 */
 
+#ifndef CHAR_STREAM_H_
+#define CHAR_STREAM_H_
+
 struct placeholder 
 {
     int dummy;
 };
+
+#endif

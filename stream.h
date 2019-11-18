@@ -1,7 +1,7 @@
 /**
  * @file stream.h
  * 
- * stream.h provides access to generic streams. Other streams
+ * `stream.h` provides access to generic streams. Other streams
  * are expected to be compatible with the stream.h's interface.
  * 
  * @author H Paterson.
@@ -9,12 +9,15 @@
  * @date 14/11/2019.
  */
 
+#ifndef STREAM_H_
+#define STREAM_H_
+
 /**
  * @typedef stream
  * 
- * stream stores generic data used by all Crop streams.
+ * `stream` stores generic data used by all Crop streams.
  *  
- * stream is an opaque type and should only be accessed
+ * `stream` is an opaque type and should only be accessed
  * using the functions in 'stream.h'.
  */
 typedef struct stream_s* stream;
@@ -22,10 +25,10 @@ typedef struct stream_s* stream;
 /**
  * @typedef STREAM_HANDLE
  * 
- * STREAM_HANDLE a dummy type guaranteed to be the same
+ * `STREAM_HANDLE` a dummy type guaranteed to be the same
  * size as the structure which implements stream.
  * 
- * STREAM_HANDLE is used to prefix/pad other structures
+ * `STREAM_HANDLE` is used to prefix/pad other structures
  * which "extend" stream so they contain the the fields
  * to "implement" stream.
  * 
@@ -38,6 +41,8 @@ typedef struct STREAM_H STREAM_HANDLE;
 /**
  * @func new_stream
  * 
- * new_stream allocates and initialises a new stream.
+ * `new_stream` allocates and initialises a new stream.
  */
 stream new_stream(void);
+
+#endif
