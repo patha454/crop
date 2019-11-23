@@ -8,40 +8,28 @@
  * diffrent streams, or suppresed them based on their 
  * severity.
  * 
+ * @see `log.h`
+ * 
  * @author H Paterson.
  * @copyright Boost Software License 1.0
  * @date 23/11/19.
  */
 
 
-#include <assert.h>
-#include <stdio.h>
 #include "log.h"
-#include "level_tags.h"
-#include "default_level_tags.h"
-#include "level_streams.h"
-#include "default_level_streams.h"
+#include "log_settings.h"
 
 
-typedef struct log_settings_s
-{
-    level_tag_set* tags;
-    level_stream_set* streams;
-} log_settings;
-
-
-static const log_settings default_settings =
-{
-    (level_tag_set*) &default_tags,
-    (level_stream_set*) &default_streams
-};
-
-
-static const log_settings* get_log_settings()
-{
-    return &default_settings;
-}
-
+/**
+ * @func _log
+ * 
+ * `_log` commits a message to the log. 
+ * 
+ * @param level     The urgency or verbosity of the message.
+ * @param message   The message to log.
+ * @param file      The file which generated the log message.
+ * @param line      The origin of the message in `file`.
+ */
 void _log(enum log_level level,
           const char* const message,
           const char* const file,

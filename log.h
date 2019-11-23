@@ -30,6 +30,11 @@
  * 
  * @note `_log` is normally for internal use only. Users 
  * should use the macro `log` to generate log messages.
+ * 
+ * @param level     The urgency or verbosity of the message.
+ * @param message   The message to log.
+ * @param file      The file which generated the log message.
+ * @param line      The origin of the message in `file`.
  */
 void _log(enum log_level level,
           const char* const message,
