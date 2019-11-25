@@ -19,7 +19,7 @@
 
 
 #include <assert.h>
-#include "level_streams.h"
+#include "scaffold/log/level_streams.h"
 
 
 /**

@@ -9,7 +9,7 @@
  */
 
 #include <stdlib.h>
-#include "log.h"
+#include "scaffold/log/log.h"
 
 int main(void)
 {
