@@ -12,8 +12,8 @@
  */
 
 
-#include "default_log_settings.h"
-#include "log_settings.h"
+#include "scaffold/log/default_log_settings.h"
+#include "scaffold/log/log_settings.h"
 
 
 /**

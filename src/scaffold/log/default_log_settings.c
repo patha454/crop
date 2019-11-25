@@ -10,9 +10,9 @@
  */
 
 
-#include "default_level_streams.h"
-#include "default_level_tags.h"
-#include "log_settings.h"
+#include "scaffold/log/default_level_streams.h"
+#include "scaffold/log/default_level_tags.h"
+#include "scaffold/log/log_settings.h"
 
 
 const struct log_settings default_log_settings =

@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "stream.h"
+#include "stream/stream.h"
 
 /**
  * @struct stream_s
