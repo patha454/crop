@@ -42,10 +42,3 @@ void _log(enum log_level level,
             file,
             line);
 }
-
-
-int main(void)
-{
-    log(DEBUG, "This is a test");
-    return 0;
-}
