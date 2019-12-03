@@ -39,6 +39,17 @@ void report_progress(unsigned int tests_completed,
 }
 
 
+/**
+ * @func run_test
+ * 
+ * `run_test` executes a single test. 
+ * 
+ * A test failure is noted to the standard out and will
+ * cause a referenced number of failures to be incremented.
+ * 
+ * @param test          The unit test to execute.
+ * @param tests_failed  A count to increment on failure.
+ */
 void run_test(test test, unsigned int* tests_failed)
 {
     unsigned int result;
