@@ -72,18 +72,18 @@ void run_test(test test, unsigned int* tests_failed)
  * progress to the standard out, and failures to the
  * standard error.
  * 
- * @param tests  Unit tests to be executed.
+ * @param tests         Unit tests to be executed.
+ * @param test_count    How many tests to be executed.
  */
-void execute_tests(test *tests[])
+void execute_tests(test* tests, unsigned int test_count)
 {
     unsigned int i;
-    unsigned int test_count;
     unsigned int tests_failed;
     tests_failed = 0;
-    test_count = sizeof(*tests) / sizeof(test);
     for (i = 0; i < test_count; i++)
     { 
-        run_test((*tests)[i], &tests_failed);
+        run_test((tests)[i], &tests_failed);
         report_progress(i, tests_failed, test_count);
     }
+    report_progress(i, tests_failed, test_count);
 }

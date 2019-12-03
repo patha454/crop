@@ -83,9 +83,10 @@ typedef struct test_s
  * A progress report will be printed on the standard out,
  * and failures will be noted on the standard error.
  * 
- * @param tests   Unit tests to be executed.
+ * @param tests         Unit tests to be executed.
+ * @param test_count    How many tests to be executed.
  */
-void execute_tests(test *tests[]);
+void execute_tests(test* tests, unsigned int test_count);
 
 
 #endif
