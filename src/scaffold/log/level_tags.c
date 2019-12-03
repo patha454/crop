@@ -21,15 +21,15 @@
 
 
 /**
- * @func get_level_tag
+ * @func get_tag
  * 
- * `get_level_tag` retrieves the logging level tag
+ * `get_tag` retrieves the logging level tag
  * associated with a particular logging level.
  * 
  * @param log_level     Retrieve the tag for `log_level`.
  * @param tags          The set of tags to query.
  */
-const char* get_level_tag(const unsigned int log_level,
+const char* get_tag(const unsigned int log_level,
                           level_tag_set* tags)
 {
     assert((*tags)[log_level].level == log_level);
