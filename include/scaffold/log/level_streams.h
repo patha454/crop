@@ -56,7 +56,7 @@ typedef struct log_level_stream level_stream_set[];
 
 
 /**
- * @func get_level_stream
+ * @func get_stream
  * 
  * `get_level_stream` retrieves the stream associated with
  * a particular logging level.
@@ -65,7 +65,7 @@ typedef struct log_level_stream level_stream_set[];
  * @param streams       The set of streams to query.
  * @return The stream used for writing out `log_level`.
  */
-FILE* get_level_stream(const unsigned int log_level,
+FILE* get_stream(const unsigned int log_level,
                        level_stream_set* streams);
 
 

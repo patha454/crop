@@ -35,9 +35,9 @@ void _log(enum log_level level,
           const char* const file,
           const unsigned int line)
 {
-    fprintf(get_level_stream(level, (get_log_settings()->streams)),
+    fprintf(get_stream(level, (get_log_settings()->streams)),
             "[ %s ] %s (%s:%d)\n",
-            get_level_tag(level, (get_log_settings()->tags)),
+            get_tag(level, (get_log_settings()->tags)),
             message,
             file,
             line);
