@@ -4,7 +4,7 @@
 # Copyright: Boost Software License 1.0.
 # Date: 25/11/2019.
 
-TARGET_SOURCES(libcrop
+TARGET_SOURCES(crop
     PUBLIC
         ${PROJECT_SOURCE_DIR}/include/scaffold/safe_mem/safe_mem.h
     PRIVATE
