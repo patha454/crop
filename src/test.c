@@ -36,12 +36,14 @@ unsigned int testFail()
     return FAIL;
 }
 
+
 test tests[] =
 {
     {testLog, "Test the log"},
     {testSum, "Test summing"}
     /* {testFail, "Test failing"} */
 };
+
 
 int main(void)
 {
