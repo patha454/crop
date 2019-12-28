@@ -67,7 +67,7 @@ void* safe_malloc(size_t size)
  * 
  * `safe_realloc` provides an error checking wrapper around `realloc`.
  * 
- * @param ptr   Original ponter for reallocation.
+ * @param ptr   Original pointer for reallocation.
  * @param size  Size to reallocate `ptr` to, in bytes.
  * @return      A pointer to the reallocated memory.
  */
