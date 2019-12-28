@@ -48,7 +48,7 @@ test tests[] =
 int main(void)
 {
     execute_tests((test*) &tests,
-                  sizeof(tests)/ sizeof(tests[0]));
+                  sizeof(tests) / sizeof(tests[0]));
     log(DEBUG, "This is a test");
     return EXIT_SUCCESS;
 }

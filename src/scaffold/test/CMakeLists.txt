@@ -4,7 +4,7 @@
 # Copyright: Boost Software License 1.0.
 # Date: 03/12/2019.
 
-TARGET_SOURCES(libcrop
+TARGET_SOURCES(crop
     PUBLIC
         ${PROJECT_SOURCE_DIR}/include/scaffold/test/unit_test.h
     PRIVATE
